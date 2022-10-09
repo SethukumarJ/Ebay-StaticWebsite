@@ -1,0 +1,439 @@
+/* =================CSS-RESET=================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------------BASIC STYLE--------------------*/
+
+
+body{
+	color: black;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.4;
+}
+ li a:hover,p a:hover,a{
+
+    text-decoration: underline;
+}
+/*<===============================Header==============================>*/
+/* FIRST-ROW */
+.wrapper{
+    width: 1250px;
+    height: 100%;
+    margin: 0 auto;
+}
+.first-row{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.left-options{
+    display: flex;
+    padding-top: 5px;
+}
+.right-options{
+    display: flex;
+    padding-top: 5px;
+}
+.right-options ul{
+    display: flex;
+}
+.right-options i{
+    padding-left: 10px;
+}
+.left-options p,.right-options a,.right-options p,.right-options li{
+    padding-left: 20px;
+}
+.left-options :first-of-type{
+    padding-left: 0;
+}
+.first-row a , .first-row p{
+   text-decoration: none;
+   font-size: 13px;
+   font-weight: 150;
+   color: black;
+}
+.line{
+    height: 1px;
+    background-color: grey;
+    opacity: .3;
+    width: 100%;
+
+}
+
+
+/* MIDDLE-ROW */
+
+.logo{
+ 
+    height: 45px;
+}
+.middlerow{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    
+}
+.catagoryButtton {
+    display: flex;
+    padding-left: 10px;
+}
+.catagories{
+   
+    font-size: 14px;
+    font-weight: 400;
+   color: slategrey;
+    text-decoration: none;
+}
+.catagoryButtton i{
+   align-self: center;
+}
+/* .textField{
+    height: 40px;
+    width: 600px;
+    
+    border-width: 2px;
+    border-color: black;
+} */
+.textField{
+    display: flex;
+    border: solid 2px black;
+    height: 35px;
+    align-items: center;
+    margin-left: 10px;
+    
+}
+.textField input{
+    width: 600px;
+    height: 30px;
+    margin-left: 10px;
+    border: none;
+    
+    
+}
+.textField ::placeholder{
+    font-size: 14px;
+    font-weight: bolc;
+    color: slategrey;
+}
+.textField i{
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: slategrey;
+}
+select{
+   height: 35px;
+    width: 150px;
+    border: 5px;
+    border-color: rgb(25, 22, 22);
+}
+
+
+.searchButton{
+    margin-left: 5px;
+    background-color: rgb(25, 25, 236);
+    width: 150px;
+    height: 40px;
+    border: solid lightblue 2px;
+    border-radius: 5px;
+}
+.searchButton:active{
+    position: relative;
+    top: 2px;
+    
+}
+.searchButton{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.advanced{
+    margin-left: 10px;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.middlerow{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+}
+
+
+/* Nav-row */
+
+.main-nav a{
+    font-size: 14px;
+    font-weight: 200;
+    color: slategrey;
+    text-decoration: none;
+}
+
+
+.main-nav{
+    margin-right: 50px;
+    margin-left: 50px;
+    list-style-type: none;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main-nav img{
+    height: 10px;
+    width: auto;
+}
+
+/*<===============================MAIN BODY==============================>*/
+/* BANNER SECTION */
+
+.banner{
+    height: 300px;
+    background: url(../ebayImages/bagAndNecklace.png);
+    background-size: cover;
+}
+.banner-block .title{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(2, 2, 82);
+}
+.banner-block{
+    margin-left: 20px;
+}
+.banner-block .subtitle{
+    font-size: 20px;
+    font-weight: 200;
+    color: rgb(2, 2, 82);
+}
+.sell a{
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(2, 2, 82);
+    text-decoration: none;
+}
+
+.sell,.readmore{
+    border: solid white 2px;
+    align-items: center;
+    display: flex;
+    width: 160px;
+    height: 35px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+.sell:hover,.readmore:hover{
+   box-shadow: 1px 1px 5px 1px white;
+}
+.sell:active,.readmore:active{
+    position: relative;
+    top: 2px;
+}
+.sell i,.daily-nav i,.staticBanner i{
+    padding-left:5px
+}
+/* CARD SECTION */
+
+
+.daily-nav,.Popular-nav{
+    margin-top: 30px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.daily-nav h1 ,.Popular-nav h1{
+    font-size: 26px;
+    color: black;
+    font-weight: bold;
+    padding-left: 30px;
+}
+.daily-nav h2,.Popular-nav h2{
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.card-section{
+    display: flex;
+    height: auto;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.card{
+    padding-left: 20px;
+    align-items: center;
+    
+}
+.card a{
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.price{
+    display: flex;
+}
+.price a{
+    display: flex;
+    color: slategrey;
+    font-size: 16px;
+    font-weight: 200;
+}
+.price a:hover{
+    color: black;
+}
+.price>li:last-of-type{
+    padding-left: 10px;
+}
+
+/* STATIC BANNER */
+
+.staticBanner{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(60, 1, 1);
+}
+.staticBanner-block{
+    margin-left: 20px;
+}
+.staticBanner-block h1{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.staticBanner-block h3{
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+}
+.readmore{
+    color: white;
+    margin-right: 20px;
+    }
+    .readmore a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-weight: 200;
+
+    }
+/* CIRCULAR CARD SECTION */
+
+.circularCard{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+   
+}
+.circularCard img{
+    height: 150px;
+    width: auto;
+}
+
+.circularCard a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 200;
+}
+.circularCard a:hover,.card a:hover{
+    color: gray;
+}
+
+.circularcardSection{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom:100px;
+}
+
+/*<===============================FOOTER==============================>*/
+
+.footet-col{
+    width: 20%;
+    height: auto;
+    justify-content: left;
+    color: slategrey;
+}
+.footer-col h2{
+    font-size: 17px;
+    font-weight: 500;
+    color: slategrey;
+    line-height: 25px;
+}
+.footer-col li{
+    font-size: 12px;
+    font-weight: 300;
+    color: slategrey;
+    line-height: 25px;
+}
+.footer-col li:hover{
+    color: black;
+}
+
+.page-footer {
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.copy{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 10px;
+    color: slategrey;
+    font-weight: 300;
+}
